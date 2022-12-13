@@ -19,7 +19,7 @@
     <style>
         .bg{
 
-            background-image: url(/assets/images/ucms-logo.png);
+            background-image: url(/assets/images/restora.jpg);
             background-repeat: round
 
         }

@@ -36,31 +36,6 @@
                 </li>
                 @endcan
 
-                @can('rapid_pro')
-                <li>
-                    <a href="{{route('rapid.pro.create') }}" class="waves-effect">
-                        <i class="mdi mdi-box-shadow"></i>
-                        <span> RapidPro </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{route('rapid.pro.flow') }}" class="waves-effect">
-                        <i class="mdi mdi-box-shadow"></i>
-                        <span> RapidPro Flow </span>
-                    </a>
-                </li>
-               @endcan
-
-
-               @can('iogt')
-                <li>
-                    <a href="{{route('iogt.index') }}" class="waves-effect">
-                        <i class="mdi mdi-translate"></i>
-                        <span> IoGT </span>
-                    </a>
-                </li>
-                @endcan
-
                 @can('user')
                 <li>
                     <a href="{{route('users.index')}}" class="waves-effect">
@@ -89,7 +64,7 @@
 
 
             </ul>
-            <hr>
+            {{-- <hr>
             <ul class="metismenu align-bottom" id="side-menu">
                 <li>
                     <a href="{{route('logout')}}" class="waves-effect">
@@ -97,7 +72,7 @@
                         <span> Logout </span>
                     </a>
                 </li>
-            </ul>
+            </ul> --}}
 
         </div>
         <!-- End Sidebar -->
