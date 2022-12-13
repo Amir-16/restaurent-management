@@ -36,7 +36,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-12">
-                                    <table class="table table-striped table-bordered " style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <table id="datatable-buttons" class="table table-striped table-bordered " style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                     <thead>
                                     <tr>
                                         <th>SL</th>
@@ -65,11 +65,18 @@
                                                                 <i class="fas fa-edit"></i> Edit
                                                             </button>
                                                         </li>
+
+                                                        @if ($user->id == Auth::user()->id)
+
+                                                        @else
                                                         <li>
                                                             <button id="deleteUserBtn" data-id="{{$user->id}}" type="button" class="dropdown-item text-danger">
                                                                 <i class="fas fa-trash"></i> Delete
                                                             </button>
                                                         </li>
+
+                                                        @endif
+
                                                         <li>
                                                             @if($user->status == 1)
                                                                 <button id="changeStatusBtn" data-id="{{$user->id}}" data-status="2" type="button" class="dropdown-item text-purple">
