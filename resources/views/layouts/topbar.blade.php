@@ -150,10 +150,10 @@
         <a href="{{url('/')}}" class="logo text-center logo-dark">
                             <span class="logo-lg">
 {{--                                <img src="assets/images/logo-dark.png" alt="" height="16">--}}
-                                <span class="logo-lg-text-light">UCMS</span>
+                                <span class="logo-lg-text-light">RESTORA-POS</span>
                             </span>
             <span class="logo-sm">
-                               <span class="logo-lg-text-light">UCMS</span>
+                               <span class="logo-lg-text-light">RESTORA-POS</span>
 {{--                                <img src="assets/images/logo-sm.png" alt="" height="25">--}}
                             </span>
         </a>
@@ -161,10 +161,10 @@
         <a href="{{url('/')}}" class="logo text-center logo-light">
                             <span class="logo-lg">
 {{--                                <img src="assets/images/logo-light.png" alt="" height="16">--}}
-                                <span class="logo-lg-text-light">UCMS</span>
+                                <span class="logo-lg-text-light">RESTORA-POS</span>
                             </span>
             <span class="logo-sm">
-                                   <span class="logo-lg-text-light">UCMS</span>
+                                   <span class="logo-lg-text-light">RESTORA-POS</span>
 {{--                                <img src="assets/images/logo-sm.png" alt="" height="25">--}}
                             </span>
         </a>
