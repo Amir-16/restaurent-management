@@ -8,21 +8,21 @@
 
             <ul class="metismenu" id="side-menu">
                 @can('dashboard')
-                <li>
-                    <a href="{{route('dashboard')}}" class="waves-effect">
-                        <i class="mdi mdi-home"></i>
-                        <span> Dashboard </span>
-                    </a>
-                </li>
+                    <li>
+                        <a href="{{ route('dashboard') }}" class="waves-effect">
+                            <i class="mdi mdi-home"></i>
+                            <span> Dashboard </span>
+                        </a>
+                    </li>
                 @endcan
 
                 @can('user')
-                <li>
-                    <a href="{{route('users.index')}}" class="waves-effect">
-                        <i class="fas fa-user"></i>
-                        <span> User </span>
-                    </a>
-                </li>
+                    <li>
+                        <a href="{{ route('users.index') }}" class="waves-effect">
+                            <i class="fas fa-user"></i>
+                            <span> User </span>
+                        </a>
+                    </li>
                 @endcan
 
                 <li>
@@ -32,8 +32,8 @@
                         <span class="menu-arrow"></span>
                     </a>
                     <ul class="nav-second-level" aria-expanded="false">
-                        <li><a href="{{route('user.settings',Auth::id())}}">Settings</a></li>
-                        <li><a href="{{route('roles.index')}}">Role & Permission </a></li>
+                        <li><a href="{{ route('user.settings', Auth::id()) }}">Settings</a></li>
+                        <li><a href="{{ route('roles.index') }}">Role & Permission </a></li>
 
                     </ul>
                 </li>

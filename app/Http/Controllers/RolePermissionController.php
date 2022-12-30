@@ -34,9 +34,9 @@ class RolePermissionController extends Controller
     public function index()
     {
         abort_if($this->isAuthorized('role'), Response::HTTP_FORBIDDEN, $this->message);
-        $roles =$this->rolePermissionRepository->paginate('id', [], 10);
+        $roles = $this->rolePermissionRepository->paginate('id', [], 10);
         $permissions = $this->rolePermissionRepository->allPermissions();
-        return view('rolePermission.index',compact('roles','permissions'));
+        return view('rolePermission.index', compact('roles', 'permissions'));
     }
 
     public function createNewRole(RoleCreateRequest $request)
@@ -68,7 +68,7 @@ class RolePermissionController extends Controller
         try {
             $role_id = AppHelper::decrypt($request->role_id);
             $role = $this->rolePermissionRepository->getRole($role_id);
-            $this->rolePermissionRepository->updateRolePermission($role,$request->validated());
+            $this->rolePermissionRepository->updateRolePermission($role, $request->validated());
             return AppHelper::successResponse('Role updated successfully');
         } catch (\Exception $e) {
             return AppHelper::errorResponse(null, $e);
@@ -85,5 +85,4 @@ class RolePermissionController extends Controller
             return AppHelper::errorResponse(null, $e);
         }
     }
-
 }
